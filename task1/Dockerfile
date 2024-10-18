@@ -6,4 +6,4 @@ RUN rm /usr/lib/python*/EXTERNALLY-MANAGED
 RUN pip3 install flask
 WORKDIR /app
 COPY ./api.py .
-CMD ["echo", "Hello, World!"]
+CMD ["python3", "api.py"]
